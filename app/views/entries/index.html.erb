@@ -1,0 +1,11 @@
+<h1>Entries Homepage</h1>
+
+<% @entries.each do |entry| %>
+
+<%= render 'find', entry:entry %>
+  <%end%>
+
+
+
+
+<%= link_to 'New', new_entry_path%>
